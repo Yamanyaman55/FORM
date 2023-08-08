@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+    <title>HTML Forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #fname{
+
+            text-align: center;
+            width: 250px;
+            height: 25px;
+            background-color: #cccccc;
+            color: black;
+            font-size: 25px;
+        }
+        #fname:hover{
+            text-align: center;
+            background-color: #ffff00;
+        }
+        #fname:active{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        #lname{
+            text-align: center;
+            width: 250px;
+            background-color: #cccccc;
+            color: black;
+            height: 25px;
+            font-size: 25px;
+        }
+        #lname:hover{
+            text-align: center;
+            background-color: #ffff00;
+        }
+        #lname:active{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        #uname{
+            text-align: center;
+            width: 250px;
+            background-color: #cccccc;
+            color: black;
+            height: 25px;
+            font-size: 25px;
+        }
+        #uname:hover{
+            text-align: center;
+            background-color: #ffff00;
+        }
+        #uname:active{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        #email{
+            text-align: center;
+            width: 250px;
+            background-color: #cccccc;
+            color: black;
+            height: 25px;
+            font-size: 25px;
+        }
+        #email:hover{
+            text-align: center;
+            background-color: #ffff00;
+        }
+        #email:active{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        #buton{
+            font-size: 25px;
+        }
+        #buton:hover{
+            text-align: center;
+            background-color: #ff3333;
+
+        }
+        #buton:active{
+            text-align: center;
+            background-color: #33ff00;
+        }
+        #cinsiyet{
+            background-color: aqua;
+            font-size: 25px;
+        }
+        #sıfırla{
+            font-size: 25px;
+        }
+        #sıfırla:hover{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        #sıfırla:active{
+            text-align: center;
+            background-color: #33ff00;
+        }
+        #birthday{
+            background-color: #ffff00;
+            font-size: 25px;
+        }
+        #phone{
+            text-align: center;
+            width: 250px;
+            background-color: #cccccc;
+            color: black;
+            height: 25px;
+            font-size: 25px;
+        }
+        #phone:hover{
+            text-align: center;
+            background-color: #ffff00;
+        }
+        #phone:active{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        #adres{
+            text-align: center;
+            width: 600px;
+            height: 25px;
+            background-color: #cccccc;
+            color: black;
+            font-size: 25px;
+        }
+        #adres:hover{
+            text-align: center;
+            background-color: #ffff00;
+        }
+        #adres:active{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<fieldset>
+    <legend style="font-size: 50px">Kullanıcı Bilgi Giriş Formu</legend>
+
+    <form>
+        <label for="fname" style="color: black;font-size: 30px">İsim giriniz:</label><br>
+        <input type="text" id="fname" name="fname" value="" autocomplete="off" required placeholder="İsim giriniz" pattern="[A-Z]*" ><br>
+            <label for="lname" style="font-size: 30px">Soy isim giriniz:</label><br>
+            <input type="text" id="lname" value="" placeholder="Soy İsim giriniz" pattern="[A-Z]*" required><br>
+                <label for="uname" style="font-size: 30px">Kullanıcı Adı:</label><br>
+                <input type="text" id="uname" name="uname" value="" required><br>
+                    <label for="email" style="font-size: 30px">E-mail giriniz:</label><br>
+                    <input type="email" id="email" name="email" value="" required><br><br>
+
+                        <label for="cinsiyet" style="font-size: 30px">Cinsiyet seçiniz:</label>
+                        <select id="cinsiyet" name="cinsiyet" required>
+                            <option value="Kız">Kız</option>
+                            <option value="Erkek">Erkek</option>
+                            <option value="Erkek">Belirtmek istemiyorum</option>
+                        </select><br><br>
+
+                        <label for="birthday" style="font-size: 30px">Doğum Tarihiniz:</label>
+                        <input type="date" id="birthday" name="birthday" required></input><br><br>
+                        <label for="phone" style="font-size: 30px">Telefon no:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="553-079-45-88" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required><br><br>
+                            <small>Ör:553-079-45-88</small><br><br>
+                       
+                            <strong style="font-size: 30px"> İLİ SEÇİNİZ:</strong><br>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> ANKARA</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> İZMİR</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> İSTANBUL</label><br>        
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> MALATYA</label><br> 
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> ANTALYA</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> ERZURUM</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> KAYSERİ</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> MUĞLA</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> EDİRNE</label><br> 
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3"> HATAY</label><br><br>
+                            
+                            <label for="adres" style="font-size: 30px">AÇIK ADRES:</label><br>
+                            <input type="text" id="adres" name="adres" placeholder="armut mah.kiraz sok. no:10 Pozantı/Adıyaman"><br><br><br>
+                        
+                            <input type="submit" id="buton" value="Gönder">
+                            <input type="reset" id="sıfırla">
+                            
+
+                         
+
+                                </form>
+
+                                </fieldset>
+
+
+
+                                </body>
+
+                                </html>
